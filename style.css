@@ -13,8 +13,8 @@
 
 .logo {
   color: aliceblue;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -22,7 +22,6 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .nav li {
@@ -83,4 +82,18 @@ button:hover {
   background: rgba(165, 165, 165, 0.377);
   border-radius: 25px;
   transform: translateY(10px);
+}
+
+@media (max-width:768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+  }
+  .logo {
+    padding-bottom: 2em;
+  }
+  p {
+    display: none;
+  }
 }
